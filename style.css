@@ -2,17 +2,58 @@
     box-sizing: border-box;
 }
 .header{
-height: 124px;
-    border: 1px solid red;
-
+min-height: 124px;
+display: flex;
+align-items: center;
+}
+.header-controls{
+    display: flex;
+    align-items: center;/*по вертикали кнопки встали по центру*/
+    justify-content: flex-end; /*уперлись в конец и от конца разрастались в лево*/
+    gap: 10px; /**/
 }
 .header-box{
-    border: 1px solid #000;
     height: 100%;
     display: flex; /*делает поведение блоков уникальным*/
     align-items: center;/*текст по центру сверху и снизу отступы одинаковые*/
     justify-content: space-between;/*элементы по краям контейнера слева и справа*/
 
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*чтоб прилепить футер к низу и зависит от интерфейса */
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btn-primary{
+    padding: 0.5em 1.5em; /* Поля по вертикали и горизонтали */
+    font-size: 0.9em; /* Размер текста */
+    color: #fff; /* Белый цвет текста */
+    background-color: #67ada9; /* Цвет фона кнопки */
+    border-width: 0; /* Убираем рамку */
+    border-bottom: 4px solid #547b80; /* Линия снизу */
+    border-radius: 0.4em; /* Радиус скругления */
+}
+.btn-outline{
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    padding: 0.5em 1.5em; /* Поля по вертикали и горизонтали */
+    background-color: transparent; /* Прозрачный цвет фона */
+    font-size: 0.9em; /* Размер текста */
+    color: #67ada9; /* Цвет текста */
+    border: 2px solid #547b80; /* Параметры рамки */
+    border-radius: 0.4em; /* Радиус скругления */
 }
 .logo{
 max-width: 100px;
@@ -22,31 +63,67 @@ max-height: 36px;
    width: 100%; 
 }
 .footer{
-    height: 156px;
+    min-height: 156px;
+    display: flex;
+    align-items: center;
+
 }
 .footer-box{
-  border: 1px solid #000;
     height: 100%;
     display: flex; /*делает поведение блоков уникальным*/
     align-items: center;/*текст по центру сверху и снизу отступы одинаковые*/
     justify-content: space-between;/*элементы по краям контейнера слева и справа*/  
+    gap: 35px;
 
 }
 .footer-nav{
     flex: 1;/*которое заставляет элемент растягиваться и занимать все доступное пространство. */
 }
-.body{
+.footer-nav ul{
+display: flex; /*чтоб ссылки в линию были*/
+list-style: none; /*убираем точки у списка*/
+align-items: center; /*ставим по центру*/
+padding: 0;/*отступы 0*/
+margin: 0;/**/
+gap: 15px;/* расстояние между ссылками 15px*/
+color: rgba(89, 89, 89, 1);
+}
+
+.footer-nav ul li{
+
+}
+.footer-nav a{
+text-decoration: none;
+color: rgba(89, 89, 89, 1);
+font-family: Roboto;
+font-style: Regular;
+line-height: normal;
+font-weight: 400;
+font-size: 18px;
+
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+body{
     margin: 0; /*отступ за контейнером*/
     padding: 0;/*отступ в контейнере*/
 }
-.main{
-
+main{
+flex-grow: 1;
+background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1.042%,rgba(245, 245, 245, 1) 100%);
 }
 .container{
+    width: 100%;
     max-width: 1230px;
     flex: center;
     margin: 0px auto; /* auto делает так чтоб отступ слева и права были одинаковыми*/
     padding-left: 15px;
     padding-right: 15px;
     height: 100%;
+    
 }
