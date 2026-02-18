@@ -127,3 +127,33 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1.042%,rgba(245, 2
     height: 100%;
     
 }
+.banner{
+    background-image: url(/img/1str/1block/placat.jpg);
+    background-repeat: no-repeat; /**/
+    padding: 68px;
+    background-size: cover;
+  min-width: 1200px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  margin: 18px 120px 56px 120px;
+}
+
+.banner-item h1{
+color: rgba(48, 44, 52, 1);
+font-size: 39px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 0;
+}
+.banner-item h3{
+    color: rgba(48, 44, 52, 1);
+font-size: 24px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: left;
+margin-top: 15px;
+}
