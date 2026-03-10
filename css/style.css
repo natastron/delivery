@@ -133,12 +133,13 @@ background: linear-gradient(180.00deg, rgba(245, 245, 245, 0) 1.042%,rgba(245, 2
 }
 
 .banner-item{
-background-image: url(../img/1str/1block/placat.jpg);
+background-image: url(../img/onestr/oneblok/placat.jpg);
     background-repeat: no-repeat; /**/
     padding: 68px;
     background-size: cover;
   border-radius: 10px;
 background-position: center right;
+max-height: 300px;
 }
 .banner-item h1{
 color: rgba(48, 44, 52, 1);
